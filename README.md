@@ -35,8 +35,8 @@ department VARCHAR(30) NOT NULL,
 grade INTEGER NOT NULL,
 Admission Date VARCHAR(60),
 email VARCHAR(30));
-### -> student라는 table을 생성하는 query문
-### -> 학번(studentID)은 int, 성명(name)은 varchar(30), 학과(department)는 varchar(30), 학년(grade)은 int, 입학일자(AdmissionDate)는 VARCHAR(60), 이메일(email)은 VARCHAR(30)으로 속성 이름과 타입을 설계했다.
+-> student라는 table을 생성하는 query문
+-> 학번(studentID)은 int, 성명(name)은 varchar(30), 학과(department)는 varchar(30), 학년(grade)은 int, 입학일자(AdmissionDate)는 VARCHAR(60), 이메일(email)은 VARCHAR(30)으로 속성 이름과 타입을 설계했다.
 <br>
 
 ## <span style="color:red">desc student;</span>
@@ -49,17 +49,19 @@ department|varchar(30)|No| |NULL| |
 grade|int|No| |NULL| |
 AdmissionDate|varchar(60)|YES| |NULL| |
 email|varchar(30)|YES| |NULL| |
-### -> student라는 table의 속성들을 확인하는 query문
+-> student라는 table의 속성들을 확인하는 query문
 <br>
 
 ## <span style="color:red">insert into student values</span>
 - insert into student values(12123456, '김철수', '정보통신공학과', 4, 'Thu Mar 01 2012 00:00:00 GMT+0900(대한민국 표준시)
 ', '철수@gmail.com');
+
 <br>
+
 - insert into student values(12123456, '김철수', '정보통신공학과', 4, 'Thu Mar 01 2012 00:00:00 GMT+0900(대한민국 표준시)
 ', '철수@gmail.com');
 
-### -> student라는 table에 값들을 insert했다.
+-> student라는 table에 값들을 insert했다.
 
 
 <br>
@@ -70,7 +72,7 @@ StudentID|name|department|grade|AdmissionDate|email|
 ---|---|---|---|---|---|
 12123456|김철수|정보통신공학과|4|Thu Mar 01 2012 00:00:00 GMT+0900 (대한민국 표준시)|철수@gmail.com|
 12171843|장동훈|정보통신공학과|3|Thu Mar 01 2012 00:00:00 GMT+0900 (대한민국 표준시)|동훈@gmail.com|
-### -> student라는 table에 들어있는 전체 값들을 확인하는 query문
+-> student라는 table에 들어있는 전체 값들을 확인하는 query문
 
 
 <br><br>
@@ -121,7 +123,7 @@ Salary|decimal(5,0)|YES| |NULL| |
 Super_ssn|char(9)|YES| |NULL| |
 Dno|int|No| |NULL| |
 
-### -> employee라는 table의 속성들을 확인하는 query문
+-> employee라는 table의 속성들을 확인하는 query문
 <br>
 
 ## <span style="color:red">desc department;</span>
@@ -133,8 +135,7 @@ Dnumber|int|No|PRI |NULL| |
 Mgr_ssn|char(9)|No|MUL|NULL| |
 Mgr_start_date|date|Yes| |NULL| |
 
-
-### -> department라는 table의 속성들을 확인하는 query문
+-> department라는 table의 속성들을 확인하는 query문
 
 <br>
 
@@ -149,7 +150,7 @@ Joyce|A|English|Mon Jul 31 1972 00:00:00 GMT+0900 (대한민국 표준시)|5631 
 Janmes|E|Borg|Wed May 31 1950 00:00:00 GMT +1000(대한민국 표준시)|450 Stone, Houston Tx|F|55000| |1|
 Ahmad|V|Jabbar|Wed Sep 02 1970 00:00:00 GMT +0900(대한민국 표준시)|975 Fire Oak, Humble Tx|M|35000| |4|
 
-### -> employe table에 들어있는 전체 값들을 확인하는 query문
+-> employe table에 들어있는 전체 값들을 확인하는 query문
 
 <br>
 
@@ -160,7 +161,7 @@ Dname|Dnumber|Mgr_ssn|Mgr_start_date|
 정보통신공학과|1|12123456|Fri Jan 01 2021 00:00:00 GMT+0900 (대한민국 표준시)|
 Administration|4|123456789|Tue Feb 14 1950 00:00:000 GMT+0900 (대한민국 표준시)|
 Research|5|987654321|Thu Feb 18 1965 00:00:00 GMT+0900 (대한민국 표준시)|
-### -> department table에 들어있는 전체 값들을 확인하는 query문
+-> department table에 들어있는 전체 값들을 확인하는 query문
 
 <br><br>
 <br><br>
@@ -201,7 +202,7 @@ CREATE TABLE PROJECT
 Pnumber int not null,
 Plocation varchar(15),
 primary key(Pnumber));
-### -> project라는 table을 생성하는 query문
+-> project라는 table을 생성하는 query문
 
 <br>
 
@@ -214,7 +215,7 @@ Pnumber|int|No|PRI | NULL| |
 Plocation|varchar(15)|Yes| | NULL| |
 
 
-### -> project라는 table의 속성들을 확인하는 query문
+-> project라는 table의 속성들을 확인하는 query문
 
 <br>
 
@@ -229,5 +230,5 @@ car|4|91 dahle|
 car|5|52 idle|
 
 
-### -> project table에 들어있는 전체 값들을 확인하는 query문
+-> project table에 들어있는 전체 값들을 확인하는 query문
 
